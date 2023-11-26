@@ -1,0 +1,58 @@
+.carinfo-container
+{
+    font-size: 1rem;
+    display: flex;
+    width: 100%;
+    background-color: var(--secondary-bg);
+}
+
+.link
+{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-decoration: none;
+    text-align: center;
+    color: var(--primary-text);
+    font-size: 1.5rem;
+}
+
+.carinfo-card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    width: 30%;
+    justify-content: center;
+    transition: box-shadow 0.3s;
+    font-size: 1.5rem;
+    color: var(--primary-text);
+    transition: ease-in 0.3s;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 3rem;
+    overflow: hidden;
+    background-color: #ffff;
+}
+
+.carinfo-card img {
+    width: 100%;
+    object-fit: cover;
+    transition: ease-out 0.3s;
+}
+
+
+.carinfo-card h2
+{
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: var(--primary-text);
+}
+
+@media (max-width: 450px){
+    .carinfo-container
+    {
+        font-size: 0.7rem;
+    }
+}

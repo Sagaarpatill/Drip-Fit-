@@ -1,0 +1,119 @@
+.banner-container {
+    width: 100%;
+    background-color: var(--secondary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 1rem;
+    /* margin-bottom: 10px; */
+    /* overflow: hidden; */
+}
+
+.banner-link {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: var(--primary-text);
+    width: 100%;
+    height: fit-content;
+}
+
+.banner-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    width:100%; /* Set to 100% to take full screen width */
+    height: 45vh;
+    background-color: var(--primary-bg);
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.car-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%; /* Set to 40% for the image */
+    height: 100%;
+    margin-right: 1%; /* Adjust margin as needed */
+    background-color: var(--secondary-text);
+    border-radius: 10px;
+}
+
+.car-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    align-items: flex-start;
+    width: 50%; /* Set to 60% for the text */
+    padding: 10px 20px;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: var(--primary-bg);
+}
+
+.title {
+    display: flex;
+    font-size: 3rem;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.desc {
+    display: flex;
+    text-align: start;
+}
+
+
+@media (max-width: 860px)
+{
+    .info
+    {
+        font-size: 1.8rem;
+    }
+
+    .title
+    {
+        font-size: 2rem;
+    }
+
+    .price
+    {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 515px)
+{
+    .info
+    {
+        width: 100%;
+    }
+    .title
+    {
+        font-size: 1.6rem;
+    }
+    .banner-link
+    {
+        flex-direction: column;
+    }
+    .banner-section
+    {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: fit-content;
+    }
+}

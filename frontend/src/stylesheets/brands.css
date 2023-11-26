@@ -1,0 +1,155 @@
+.brand-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--primary-bg);
+    padding: 5rem 0;
+}
+
+.brand-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    font-size: 2.5rem;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--primary-bg);
+}
+
+.brand-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.brand-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-text);
+}
+
+.brand-header .brand-tabs {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.brand-header .brand-tabs button {
+    background-color: transparent;
+    border: none;
+    padding: 5px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.brand-header .brand-tabs button.active {
+    background-color: black;
+    color: white; 
+}
+
+.brand-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 80%;
+}
+
+.brand-link
+{
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+    justify-content: center;
+    transition: box-shadow 0.3s;
+    font-size: 1.5rem;
+    color: var(--primary-text);
+    transition: ease-in 0.3s;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.brand-card {
+    display: flex;
+    align-items: center;
+    /* padding: 2rem 0; */
+    /* border: 1px solid #ccc;
+    border-radius: 5px; */
+    width: 33%;
+    justify-content: center;
+    transition: box-shadow 0.3s;
+    font-size: 1.5rem;
+    color: var(--primary-text);
+    transition: ease-in 0.3s;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+.brand-link:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    background-color: var(--accent);
+    scale: 1.05;
+}
+
+.brand-card img {
+    width: 100%;
+    object-fit: contain;
+    z-index: 2;
+}
+
+.see-more {
+    font-size: 1.2rem;
+    margin-top: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-radius: 5px; 
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
+    transition: ease-in 0.2s;
+}
+
+.see-more i
+{
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+.see-more:hover
+{
+    background-color: var(--accent);
+    color: var(--primary-text);
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 650px) 
+{
+    .brand-card
+    {
+        font-size: 1.2rem;
+        flex-wrap: wrap;
+    }
+
+    .brand-card img
+    {
+        width: 2.5rem;
+    }
+
+}

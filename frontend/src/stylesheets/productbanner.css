@@ -1,0 +1,125 @@
+.carbanner-container
+{
+    width: 100%;
+    font-size: 5rem;
+    color: var(--primary-text);
+    background-color: var(--secondary-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+
+.carbanner-section
+{
+    width: 100%;
+    border-radius: 5px;
+    background-color: #ffff;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carbanner-section h1
+{
+    color: var(--primary-text);
+    font-size: 3.5rem;
+}
+
+.image-section img
+{
+    width: 75%;
+    height: 65vh;
+    object-fit: contain;
+}
+
+.image-section
+{
+    display: flex;
+    align-items: center;
+    /* justify-content:space-around; */
+    font-size: 2rem;
+    /* border: 1px solid var(--secondary-bg); */
+    /* box-shadow: 0px 0px 5px var(--secondary-bg); */
+    /* border-radius: 5px; */
+    border-bottom: 2px solid var(--secondary-bg);
+}
+
+.specs-cards
+{
+    font-size: 3rem;
+    line-height: 30px;
+    border-left: 2px solid var(--secondary-bg);
+}
+
+.specs-cards div
+{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--accent);
+    border-radius: 3px;
+    font-weight: 500;
+    margin-left: 25px;
+
+}
+
+.specs-section
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    /* background-color: var(--primary-text); */
+    padding: 2%;
+    width: 100%;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.specs-section div
+{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 25px; */
+    flex-wrap: wrap;
+    font-weight: 500;
+    color: rgb(85, 85, 85);
+}
+
+.specs-section span
+{
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--primary-text);
+    margin-right: 5px;
+    padding-right: 5px;
+}
+
+.s-row
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+
+.s-verdict span
+{
+    margin-bottom: 10px;
+
+}
+
+.s-cartbtn
+{
+    font-size: 1.5rem;
+    /* width: fit-content; */
+    padding: 10px;
+    background-color: var(--accent);
+    color: var(--primary-text);
+    margin-bottom: 10px;
+}
